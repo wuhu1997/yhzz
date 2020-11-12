@@ -13,6 +13,7 @@ public class ConsumerController {
     @RequestMapping("/question")
     public String findAns(String question) {
         String ans = questionFeign.findAns(question);
+        System.out.println("1111");
         return ans;
     }
 }
